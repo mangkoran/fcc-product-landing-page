@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --color-black: #2e3440;
+    --color-white: #eceff4;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    /* background: #eceff4; */
+    color: var(--color-black);
+    font: 1rem 'Montserrat', sans-serif;
+}
+.container {
+    margin: 2rem auto 0 auto;
+    width: 100%;
+}
+@media (min-width: 0) {
+    .container {
+        /* max-width: 1000px; */
+    }
+    form {
+        background: var(--color-white);
+        border-radius: 0.5rem;
+    }
+}
+h1 {
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+}
+p {
+    margin: 0 0 1rem 0;
+}
+label {
+    align-items: center;
+    display: flex;
+    margin: 0 0 1rem 0;
+}
+button {
+    border: none;
+}
+.container {
+    margin: 2rem auto 0 auto;
+    width: 100%;
+}
+.description {
+    font-style: italic;
+}
+.clue {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+.text-center {
+    text-align: center;
+}
+/* form */
+
+form {
+    margin: 2rem auto;
+    padding: 2rem 2rem 1px;
+    /* box-shadow: 0 0 1rem var(--color-black); */
+    width: 50rem;
+}
+input,
+button,
+select,
+textarea {
+    border: 0;
+    margin: 0;
+}
+.form-group {
+    margin: 0 auto 2rem auto;
+}
+.form-control {
+    border-radius: 0.5rem;
+    color: inherit;
+    display: block;
+    height: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+}
+.input-radio,
+.input-checkbox {
+    margin-right: 0.5rem;
+}
+.input-textarea {
+    border-radius: 0.5rem;
+    min-height: 5rem;
+    padding: 1rem;
+    resize: none;
+    width: 100%;
+}
+.submit-button {
+    background: var(--color-black);
+    border-radius: 0.5rem;
+    color: var(--color-white);
+    cursor: pointer;
+    display: block;
+    /* margin: 0 auto; */
+    padding: 1rem;
+    width: 100%;
+}

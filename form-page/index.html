@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div class="container">
+            <header>
+                <h1 id="title" class="text-center">GMK Circle Interest Check</h1>
+                <p id="description" class="text-center">Keycap set inspired by OSS</p>
+            </header>
+            <form method="" id="survey-form" action="">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" value="" id="name" class="form-control" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" value="" id="email" class="form-control" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="phone">Phone Number</label>
+                    <input type="number" name="phone" value="" id="number" class="form-control" placeholder="Enter your phone number" min="100000" max="999999" required />
+                </div>
+                <div class="form-group">
+                    <label for="kit">Kit</label>
+                    <select id="dropdown" name="kit" class="form-control" required>
+                        <option disabled selected>Select kit you are interested in</option>
+                        <option value="core">Core</option>
+                        <option value="macro">Macro</option>
+                        <option value="spacebars">Spacebars</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What is your thought about this keycap set?</p>
+                    <label>
+                        <input type="radio" name="user-thought" value="very-good" class="input-radio" checked />
+                        Very good
+                    </label>
+                    <label>
+                        <input type="radio" name="user-thought" value="just-enougn" class="input-radio" checked />
+                        Just enough
+                    </label>
+                    <label>
+                        <input type="radio" name="user-thought" value="need-some-improvement" class="input-radio" checked />
+                        Need some improvement
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see improved?<span class="clue">Check all that apply</span></p>
+                    <label>
+                        <input type="checkbox" name="prefer" value="color-selection" class="input-checkbox" />
+                        Color selection
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="legend-font-selection" class="input-checkbox" />
+                        Legend font selection
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="modifier-icon" class="input-checkbox" />
+                        Modifier icon
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comment" id="comment" rows="" cols="" tabindex="" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
