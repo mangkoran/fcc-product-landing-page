@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* general */
+:root {
+  --base00: #2E3440;
+  --base01: #3B4252;
+  --base02: #434C5E;
+  --base03: #4C566A;
+  --base04: #D8DEE9;
+  --base05: #E5E9F0;
+  --base06: #ECEFF4;
+  --base07: #8FBCBB;
+  --base08: #88C0D0;
+  --base09: #81A1C1;
+  --base0A: #5E81AC;
+  --base0B: #BF616A;
+  --base0C: #D08770;
+  --base0D: #EBCB8B;
+  --base0E: #A3BE8C;
+  --base0F: #B48EAD;
+}
+html,
+body {
+    min-width: 400px;
+    color: var(--base00);
+    background: var(--base06);
+    font-family: 'Poppin', Arial, sans-serif;
+}
+header {
+    color: var(--base00);
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: thin;
+}
+/* navbar */
+#navbar {
+    position: fixed;
+    min-width: 200px;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    border-right: solid;
+    border-color: var(--base03);
+}
+#navbar ul {
+    height: 80%;
+    padding: 0;
+    overflow: hidden auto;
+}
+#navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+#navbar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* main */
+#main-doc {
+    position: absolute;
+    margin: 0 0 100px 200px;
+    padding: 40px;
+}
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+section article {
+    margin: 20px;
+}
+section li {
+    margin: 10px 0 0 10px;
+}
+pre,
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background: var(--base05);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}

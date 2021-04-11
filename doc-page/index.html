@@ -1,17 +1,35 @@
 <html>
     <head>
-
+        <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
     </head>
     <body>
-        <nav>
+        <nav id="navbar">
             <header>
                 Doom Emacs Documentation
             </header>
             <ul>
+                <li>
+                    <a href="#Introduction" class="nav-link">Introduction</a>
+                </li>
+                <li>
+                    <a href="#Features" class="nav-link">Features</a>
+                </li>
+                <li>
+                    <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+                </li>
+                <li>
+                    <a href="#Install" class="nav-link">Install</a>
+                </li>
+                <li>
+                    <a href="#Getting_Help" class="nav-link">Getting Help</a>
+                </li>
+                <li>
+                    <a href="#Contribute" class="nav-link">Contribute</a>
+                </li>
             </ul>
         </nav>
         <main id="main-doc">
-            <section class="main-section" id="intro">
+            <section class="main-section" id="Introduction">
                 <header>
                     Introduction
                 </header>
@@ -64,7 +82,7 @@
                     </ul>
                 </article>
             </section>
-            <section class="main-section" id="feature">
+            <section class="main-section" id="Features">
                 <header>
                     Features
                 </header>
@@ -131,16 +149,178 @@
                     </ul>
                 </article>
             </section>
-            <section class="main-section" id="prereq">
+            <section class="main-section" id="Prerequisites">
                 <header>
                     Prerequisites
                 </header>
                 <article>
                     <ul>
                         <li>
-
+                            Git 2.23+
+                        </li>
+                        <li>
+                            Emacs 26.3+ (27.1 is recommended, or native comp).
+                        </li>
+                        <li>
+                            ripgrep 11.0+
+                        </li>
+                        <li>
+                            GNU find
+                        </li>
+                        <li>
+                            OPTIONAL: fd 7.3.0+ (improves file indexing performance for some commands).
                         </li>
                     </ul>
+                    <p>
+                        Doom is comprised of ~150 optional modules, some of which may have additional
+                        dependencies. Visit their documentation or run doom doctor to chack for
+                        any that you may have missed.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Install">
+                <header>
+                    Install
+                </header>
+                <article>
+                    <pre>
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+                    </pre>
+                    <p>
+                        Then read our Getting Started guide to be walked through installing, configuring and
+                        maintaining Doom Emacs.
+                    </p>
+                    <p>
+                        It's a good idea to add ~/.emacs.d/bin to your PATH! Other bin/doom commands
+                        you should know about:
+                        <ul>
+                            <li>
+                                doom sync to synchromize your private config with Doom by installing missing
+                                packages, removing orphaned packages, and regenrating caches. Run this
+                                wheneer you modify your private init.el or packages.el, or install/remove
+                                an Emacs package through your OS package manager (e.g. mu4e or agda).
+                            </li>
+                            <li>
+                                doom upgrade to update Doom to the latest release & all installed
+                                packages.
+                            </li>
+                            <li>
+                                doom doctor to diagnose common issue with your system and config.
+                            </li>
+                            <li>
+                                doom env to dump a snapshot of your shell environment to a file that
+                                Doom will load at startup. This allows Emacs to inherit your PATH,
+                                among other things.
+                            </li>
+                            <li>
+                                doom build to recompile all installed packages (use this if you
+                                up/downgrade Emacs).
+                            </li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Getting_Help">
+                <header>
+                    Getting Help
+                </header>
+                <article>
+                    <p>
+                        Emacs is no journey of mere thousand miles. You will run into problems and
+                        mysterious errors. When you do, here are some places you can look for help:
+                    </p>
+                    <ul>
+                        <li>
+                            Our documentation covers many use cases.
+                            <ul>
+                                <li>
+                                    The Configuration section covers how to configure Doom and its packages.
+                                </li>
+                                <li>
+                                    The Package Management section covers how to install and disable
+                                    packages.
+                                </li>
+                                <li>
+                                    This section explaing the bin/doom script's most important commands.
+                                </li>
+                                <li>
+                                    This section lists some common configuration mistakes new users make,
+                                    when migrating a config from another distro or their own.
+                                </li>
+                                <li>
+                                    This answer shows you how to add your own themes to your private config.
+                                </li>
+                                <li>
+                                    This answer shows you how to change the default font.
+                                </li>
+                                <li>
+                                    Your issue may be documented in the FAQ.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            With Emacs built-in help system documentation is a keystroke away:
+                            <ul>
+                                <li>
+                                    For functions: SPC h f or C-h f
+                                </li>
+                                <li>
+                                    For variables: SPC h v or C-h v
+                                </li>
+                                <li>
+                                    For a keybind: SPC h k or C-h k
+                                </li>
+                                <li>
+                                    To search available keybinds: SPC h b b or C-h b b
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Run bin/doom doctor to detect common issues with your development enviroment
+                            and private config.
+                        </li>
+                        <li>
+                            Check out the FAQ, in case your question has already been answered.
+                        </li>
+                        <li>
+                            Search Doom's issue tracker in case your issue was already reported.
+                        </li>
+                        <li>
+                            Hop on our Discord server; it's active and friendly! Keep and eye on the
+                            #announcements channl, where I announce breaking updates and releases.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Contribute">
+                <header>
+                    Contribute
+                </header>
+                <article>
+                    <p>
+                        Doom is a labor of love and incurable madness, but I'm only one guy. Doom wouldn't
+                        be where it is today without your help. I welcome contributions of any kind!
+                        <ul>
+                            <li>
+                                I <3 pulll request and bug reports (see Contributions Guidelines)!
+                            </li>
+                            <li>
+                                Don't hesitate to tell me my Elisp-fu sucks, but please tell me why.
+                            </li>
+                            <li>
+                                Hop on our Discord server and say hi! Help others, hang out or talk to me
+                                about Emacs, gamedev, programming, physics, pixel art, anime, gaming --
+                                anything you like. Nourish this lonely soul.
+                            </li>
+                            <li>
+                                If you'd like to support my work financially, buy me a drink through
+                                liberapay or paypal. My work contends with studies, adventures in indie
+                                gamedev and freelance work. Donations help me allocate more time to my
+                                Emacs and OSS capers.
+                            </li>
+                        </ul>
+                    </p>
                 </article>
             </section>
         </main>
