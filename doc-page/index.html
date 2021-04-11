@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
     </head>
     <body>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <nav id="navbar">
             <header>
                 Doom Emacs Documentation
@@ -68,7 +69,7 @@
                         <li>
                             Your system, your rules. You know better. At least, Doom hopes so! It won't
                             automatically install system dependencies (and will force plugins not to either).
-                            Rely on doom doctor to tell you what's missing.
+                            Rely on <code>doom doctor</code> to tell you what's missing.
                         </li>
                         <li>
                             Nix/Guix is a great idea! The Emacs ecosystem is temperamental. Things break
@@ -119,7 +120,8 @@
                         </li>
                         <li>
                             A Spacemacs-esque keybinding scheme, centered around leader and localleader
-                            prefix keys (SPC and SPC-m for evil users, C-c and C-c l for vanilla users).
+                            prefix keys (<code>SPC</code> and <code>SPC-m</code> for evil users,
+                            <code>C-c</code> and <code>C-c l</code> for vanilla users).
                         </li>
                         <li>
                             A rule-based popup manager to control how temporary buffers are displayed
@@ -165,7 +167,7 @@
                             ripgrep 11.0+
                         </li>
                         <li>
-                            GNU find
+                            GNU <code>find</code>
                         </li>
                         <li>
                             OPTIONAL: fd 7.3.0+ (improves file indexing performance for some commands).
@@ -192,29 +194,30 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
                         maintaining Doom Emacs.
                     </p>
                     <p>
-                        It's a good idea to add ~/.emacs.d/bin to your PATH! Other bin/doom commands
-                        you should know about:
+                        It's a good idea to add <code>~/.emacs.d/bin</code> to your <code>PATH!</code>
+                        Other <code>bin/doom</code> commands you should know about:
                         <ul>
                             <li>
-                                doom sync to synchromize your private config with Doom by installing missing
-                                packages, removing orphaned packages, and regenrating caches. Run this
-                                wheneer you modify your private init.el or packages.el, or install/remove
-                                an Emacs package through your OS package manager (e.g. mu4e or agda).
+                                <code>doom sync</code> to synchromize your private config with Doom by
+                                installing missing packages, removing orphaned packages, and regenrating caches.
+                                Run this whenever you modify your private <code>init.el</code> or
+                                <code>packages.el</code>, or install/remove an Emacs package
+                                through your OS package manager (e.g. mu4e or agda).
                             </li>
                             <li>
-                                doom upgrade to update Doom to the latest release & all installed
+                                <code>doom upgrade</code> to update Doom to the latest release & all installed
                                 packages.
                             </li>
                             <li>
-                                doom doctor to diagnose common issue with your system and config.
+                                <code>doom doctor</code> to diagnose common issue with your system and config.
                             </li>
                             <li>
-                                doom env to dump a snapshot of your shell environment to a file that
-                                Doom will load at startup. This allows Emacs to inherit your PATH,
+                                <code>doom env</code> to dump a snapshot of your shell environment to a file that
+                                Doom will load at startup. This allows Emacs to inherit your <code>PATH</code>,
                                 among other things.
                             </li>
                             <li>
-                                doom build to recompile all installed packages (use this if you
+                                <code>doom build</code> to recompile all installed packages (use this if you
                                 up/downgrade Emacs).
                             </li>
                         </ul>
@@ -242,7 +245,7 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
                                     packages.
                                 </li>
                                 <li>
-                                    This section explaing the bin/doom script's most important commands.
+                                    This section explaing the <code>bin/doom</code> script's most important commands.
                                 </li>
                                 <li>
                                     This section lists some common configuration mistakes new users make,
@@ -263,21 +266,21 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
                             With Emacs built-in help system documentation is a keystroke away:
                             <ul>
                                 <li>
-                                    For functions: SPC h f or C-h f
+                                    For functions: <code>SPC h f</code> or <code>C-h f</code>
                                 </li>
                                 <li>
-                                    For variables: SPC h v or C-h v
+                                    For variables: <code>SPC h v</code> or <code>C-h v</code>
                                 </li>
                                 <li>
-                                    For a keybind: SPC h k or C-h k
+                                    For a keybind: <code>SPC h k</code> or <code>C-h k</code>
                                 </li>
                                 <li>
-                                    To search available keybinds: SPC h b b or C-h b b
+                                    To search available keybinds: <code>SPC h b b</code> or <code>C-h b b</code>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            Run bin/doom doctor to detect common issues with your development enviroment
+                            Run <code>bin/doom doctor</code> to detect common issues with your development enviroment
                             and private config.
                         </li>
                         <li>
