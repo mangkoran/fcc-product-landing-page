@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+/* Nord by arcticicestudio */
+:root {
+  --base00: #2E3440;
+  --base01: #3B4252;
+  --base02: #434C5E;
+  --base03: #4C566A;
+  --base04: #D8DEE9;
+  --base05: #E5E9F0;
+  --base06: #ECEFF4;
+  --base07: #8FBCBB;
+  --base08: #88C0D0;
+  --base09: #81A1C1;
+  --base0A: #5E81AC;
+  --base0B: #BF616A;
+  --base0C: #D08770;
+  --base0D: #EBCB8B;
+  --base0E: #A3BE8C;
+  --base0F: #B48EAD;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+/* base */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--base06);
+}
+h1,
+h2 {
+    font-weight: 800;
+    text-align: center;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 4rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--base06);
+}
+img {
+    display: block;
+    width: 100%;
+}
+/* nav */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--base0B);
+    /* box-shadow: 0 0 20px var(--base04); */
+    z-index: 10;
+}
+.nav-list {
+    display: flex;
+    margin: 0 20px 0 0;
+}
+.nav-list a {
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.nav-list a:hover {
+    background: var(--base06);
+    color: var(--base0B);
+}
+/* welcome section */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--base00);
+}
+.welcome-section p {
+    font-size: 2rem;
+    font-weight: 200;
+}
+/* project section */
+.projects-section {
+    text-align: center;
+    padding: 10rem 8rem;
+    background: var(--base08);
+}
+.projects-section-header {
+    max-width: 600px;
+    margin: 0 auto 6rem auto;
+}
+/* image grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 10px auto;
+}
+.project {
+    background: var(--base00);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+}
+.code {
+    font-family: 'Source Code Pro';
+    font-size: inherit;
+    font-weight: 800;
+    color: var(--base00);
+    transition: color 0.2s ease-out;
+}
+.project:hover .code {
+    color: var(--base0C);
+}
+.project-image {
+    /* height: calc(100% - 6rem); */
+    /* width: 100%; */
+    object-fit: cover;
+}
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+/* contact section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--base00);
+}
+.contact-section h2 {
+    font-size: 6rem;
+}
+.contact-section p {
+    font-style: italic;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+}
+.contact-details {
+    font-size: 2rem;
+    /* text-shadow: 4px 4px 4px; */
+    transition: all 0.2s ease-out;
+}
+.contact-details:hover {
+    transform: translate(-4px, -4px);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+}
+/* footer */
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--base00);
+    border-top: 4px solid var(--base0B);
+}
+footer p {
+    margin: 2rem;
+}
