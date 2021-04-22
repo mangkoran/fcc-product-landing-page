@@ -34,6 +34,11 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
 }
+@media (max-width: 800px) {
+    html {
+        font-size: 8px;
+    }
+}
 /* base */
 body {
     font-family: 'Montserrat', sans-serif;
